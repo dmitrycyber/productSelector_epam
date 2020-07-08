@@ -4,14 +4,14 @@ import java.util.Map;
 public class ProductContainer {
     private Map<String, Product> productsMap;
 
-    public ProductContainer() {
+    public ProductContainer(Map<String, String> params) {
         productsMap = new HashMap<>();
-        productsMap.put("Oven", new Oven());
-        productsMap.put("Laptop", new Laptop());
-        productsMap.put("Refrigerator", new Refrigerator());
-        productsMap.put("VacuumCleaner", new VacuumCleaner());
-        productsMap.put("TabletPC", new TabletPC());
-        productsMap.put("Speakers", new Speakers());
+        productsMap.put("Oven", new Oven(params));
+        productsMap.put("Laptop", new Laptop(params));
+        productsMap.put("Refrigerator", new Refrigerator(params));
+        productsMap.put("VacuumCleaner", new VacuumCleaner(params));
+        productsMap.put("TabletPC", new TabletPC(params));
+        productsMap.put("Speakers", new Speakers(params));
     }
 
     public Map<String, Product> getProductsMap() {
