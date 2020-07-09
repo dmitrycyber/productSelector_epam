@@ -1,4 +1,6 @@
-public class Announcer {
+package by.epamtc.productSelector.services.announcer;
+
+public class SimpleAnnouncer implements Announcer {
 
     public void enterType(){
         System.out.println("Enter type of product: ");
