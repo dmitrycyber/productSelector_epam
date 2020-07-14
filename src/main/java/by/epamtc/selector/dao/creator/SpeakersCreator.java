@@ -5,7 +5,7 @@ import by.epamtc.selector.entity.Speakers;
 
 import java.util.Map;
 
-public class SpeakersCreator implements ProductCreator {
+public class SpeakersCreator implements ApplianceCreator {
     @Override
     public Appliance create(Map<String, String> parameters) {
         Speakers speakers = new Speakers();

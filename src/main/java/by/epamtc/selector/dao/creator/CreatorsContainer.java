@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class CreatorsContainer {
     private static CreatorsContainer instance = new CreatorsContainer();
-    private Map<String, ProductCreator> creatorMap = new HashMap<>();
+    private Map<String, ApplianceCreator> creatorMap = new HashMap<>();
 
     private CreatorsContainer() {
         creatorMap.put("Laptop", new LaptopCreator());
@@ -16,7 +16,7 @@ public class CreatorsContainer {
         creatorMap.put("Speakers", new SpeakersCreator());
     }
 
-    public Map<String, ProductCreator> getCreatorMap() {
+    public Map<String, ApplianceCreator> getCreatorMap() {
         return creatorMap;
     }
 

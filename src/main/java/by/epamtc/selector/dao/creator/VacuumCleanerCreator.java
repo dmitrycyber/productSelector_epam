@@ -5,7 +5,7 @@ import by.epamtc.selector.entity.VacuumCleaner;
 
 import java.util.Map;
 
-public class VacuumCleanerCreator implements ProductCreator {
+public class VacuumCleanerCreator implements ApplianceCreator {
     @Override
     public Appliance create(Map<String, String> parameters) {
         VacuumCleaner vacuumCleaner = new VacuumCleaner();

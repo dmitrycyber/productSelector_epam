@@ -5,7 +5,7 @@ import by.epamtc.selector.entity.Appliance;
 
 import java.util.Map;
 
-public class OvenCreator implements ProductCreator {
+public class OvenCreator implements ApplianceCreator {
     @Override
     public Appliance create(Map<String, String> parameters) {
         Oven oven = new Oven();
