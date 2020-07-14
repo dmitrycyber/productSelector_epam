@@ -1,14 +1,14 @@
-package by.epamtc.selector.services.creator;
+package by.epamtc.selector.dao.creator;
 
 import by.epamtc.selector.entity.Laptop;
-import by.epamtc.selector.entity.Product;
+import by.epamtc.selector.entity.Appliance;
 
 import java.util.Map;
 
 public class LaptopCreator implements ProductCreator {
 
     @Override
-    public Product create(Map<String, String> parameters) {
+    public Appliance create(Map<String, String> parameters) {
         Laptop laptop = new Laptop();
         laptop.setBatteryCapacity(parameters.get("BATTERY_CAPACITY"));
         laptop.setOs(parameters.get("OS"));

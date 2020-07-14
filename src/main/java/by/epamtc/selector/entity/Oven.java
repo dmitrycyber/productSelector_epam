@@ -2,7 +2,7 @@ package by.epamtc.selector.entity;
 
 import java.util.Objects;
 
-public class Oven implements Product {
+public class Oven implements Appliance {
     private String powerConsumption;
     private String weight;
     private String capacity;

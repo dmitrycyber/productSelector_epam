@@ -2,7 +2,7 @@ package by.epamtc.selector.entity;
 
 import java.util.Objects;
 
-public class Speakers implements Product {
+public class Speakers implements Appliance {
     private String powerConsumption;
     private String numberOfSpeakers;
     private String frequencyRange;

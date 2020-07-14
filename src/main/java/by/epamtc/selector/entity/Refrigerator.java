@@ -2,7 +2,7 @@ package by.epamtc.selector.entity;
 
 import java.util.Objects;
 
-public class Refrigerator implements Product {
+public class Refrigerator implements Appliance {
     private String powerConsumption;
     private String weight;
     private String freezerCapacity;

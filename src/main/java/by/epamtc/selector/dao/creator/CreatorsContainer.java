@@ -1,12 +1,13 @@
-package by.epamtc.selector.services.creator;
+package by.epamtc.selector.dao.creator;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class CreatorsContainer {
+    private static CreatorsContainer instance = new CreatorsContainer();
     private Map<String, ProductCreator> creatorMap = new HashMap<>();
 
-    public CreatorsContainer() {
+    private CreatorsContainer() {
         creatorMap.put("Laptop", new LaptopCreator());
         creatorMap.put("Oven", new OvenCreator());
         creatorMap.put("Refrigerator", new RefrigeratorCreator());
@@ -17,5 +18,9 @@ public class CreatorsContainer {
 
     public Map<String, ProductCreator> getCreatorMap() {
         return creatorMap;
+    }
+
+    public static CreatorsContainer getInstance() {
+        return instance;
     }
 }

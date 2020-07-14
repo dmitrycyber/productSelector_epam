@@ -3,7 +3,7 @@ package by.epamtc.selector.entity;
 import java.util.Map;
 import java.util.Objects;
 
-public class Laptop implements Product {
+public class Laptop implements Appliance {
     private String batteryCapacity;
     private String os;
     private String memoryRom;

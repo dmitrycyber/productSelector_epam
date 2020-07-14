@@ -2,7 +2,7 @@ package by.epamtc.selector.entity;
 
 import java.util.Objects;
 
-public class VacuumCleaner implements Product {
+public class VacuumCleaner implements Appliance {
     private String powerConsumption;
     private String filterType;
     private String bagType;

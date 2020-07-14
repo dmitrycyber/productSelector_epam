@@ -1,13 +1,13 @@
-package by.epamtc.selector.services.creator;
+package by.epamtc.selector.dao.creator;
 
 import by.epamtc.selector.entity.Oven;
-import by.epamtc.selector.entity.Product;
+import by.epamtc.selector.entity.Appliance;
 
 import java.util.Map;
 
 public class OvenCreator implements ProductCreator {
     @Override
-    public Product create(Map<String, String> parameters) {
+    public Appliance create(Map<String, String> parameters) {
         Oven oven = new Oven();
         oven.setPowerConsumption(parameters.get("POWER_CONSUMPTION"));
         oven.setWeight(parameters.get("WEIGHT"));

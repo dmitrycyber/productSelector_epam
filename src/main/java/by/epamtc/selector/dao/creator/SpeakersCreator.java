@@ -1,13 +1,13 @@
-package by.epamtc.selector.services.creator;
+package by.epamtc.selector.dao.creator;
 
-import by.epamtc.selector.entity.Product;
+import by.epamtc.selector.entity.Appliance;
 import by.epamtc.selector.entity.Speakers;
 
 import java.util.Map;
 
 public class SpeakersCreator implements ProductCreator {
     @Override
-    public Product create(Map<String, String> parameters) {
+    public Appliance create(Map<String, String> parameters) {
         Speakers speakers = new Speakers();
         speakers.setPowerConsumption(parameters.get("POWER_CONSUMPTION"));
         speakers.setNumberOfSpeakers(parameters.get("NUMBER_OF_SPEAKERS"));

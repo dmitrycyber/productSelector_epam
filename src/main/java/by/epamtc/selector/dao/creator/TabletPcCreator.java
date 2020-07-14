@@ -1,13 +1,13 @@
-package by.epamtc.selector.services.creator;
+package by.epamtc.selector.dao.creator;
 
-import by.epamtc.selector.entity.Product;
+import by.epamtc.selector.entity.Appliance;
 import by.epamtc.selector.entity.TabletPC;
 
 import java.util.Map;
 
 public class TabletPcCreator implements ProductCreator {
     @Override
-    public Product create(Map<String, String> parameters) {
+    public Appliance create(Map<String, String> parameters) {
         TabletPC tabletPC = new TabletPC();
         tabletPC.setBatteryCapacity(parameters.get("BATTERY_CAPACITY"));
         tabletPC.setDisplayInches(parameters.get("DISPLAY_INCHES"));

@@ -2,7 +2,7 @@ package by.epamtc.selector.entity;
 
 import java.util.Objects;
 
-public class TabletPC implements Product {
+public class TabletPC implements Appliance {
     private String batteryCapacity;
     private String displayInches;
     private String memoryRom;
