@@ -10,6 +10,30 @@ public class Refrigerator implements Appliance {
     private String height;
     private String width;
 
+    public String getPowerConsumption() {
+        return powerConsumption;
+    }
+
+    public String getWeight() {
+        return weight;
+    }
+
+    public String getFreezerCapacity() {
+        return freezerCapacity;
+    }
+
+    public String getOverallCapacity() {
+        return overallCapacity;
+    }
+
+    public String getHeight() {
+        return height;
+    }
+
+    public String getWidth() {
+        return width;
+    }
+
     @Override
     public String toString() {
         return "Refrigerator{" +

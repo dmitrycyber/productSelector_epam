@@ -9,6 +9,26 @@ public class TabletPC implements Appliance {
     private String flashMemoryCapacity;
     private String color;
 
+    public String getBatteryCapacity() {
+        return batteryCapacity;
+    }
+
+    public String getDisplayInches() {
+        return displayInches;
+    }
+
+    public String getMemoryRom() {
+        return memoryRom;
+    }
+
+    public String getFlashMemoryCapacity() {
+        return flashMemoryCapacity;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
     @Override
     public String toString() {
         return "TabletPC{" +

@@ -1,5 +1,7 @@
 package by.epamtc.divoninsky.selector.entity;
 
+import by.epamtc.divoninsky.selector.entity.criteria.SearchCriteria;
+
 import java.util.Objects;
 
 public class Speakers implements Appliance {
@@ -7,6 +9,22 @@ public class Speakers implements Appliance {
     private String numberOfSpeakers;
     private String frequencyRange;
     private String cordLength;
+
+    public String getPowerConsumption() {
+        return powerConsumption;
+    }
+
+    public String getNumberOfSpeakers() {
+        return numberOfSpeakers;
+    }
+
+    public String getFrequencyRange() {
+        return frequencyRange;
+    }
+
+    public String getCordLength() {
+        return cordLength;
+    }
 
     @Override
     public String toString() {

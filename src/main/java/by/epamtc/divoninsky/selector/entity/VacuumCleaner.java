@@ -10,6 +10,30 @@ public class VacuumCleaner implements Appliance {
     private String motorSpeedRegulation;
     private String cleaningWidth;
 
+    public String getPowerConsumption() {
+        return powerConsumption;
+    }
+
+    public String getFilterType() {
+        return filterType;
+    }
+
+    public String getBagType() {
+        return bagType;
+    }
+
+    public String getWandtype() {
+        return wandtype;
+    }
+
+    public String getMotorSpeedRegulation() {
+        return motorSpeedRegulation;
+    }
+
+    public String getCleaningWidth() {
+        return cleaningWidth;
+    }
+
     @Override
     public String toString() {
         return "VacuumCleaner{" +

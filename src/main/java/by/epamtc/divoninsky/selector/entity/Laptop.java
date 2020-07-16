@@ -11,6 +11,30 @@ public class Laptop implements Appliance {
     private String cpu;
     private String displayInches;
 
+    public String getBatteryCapacity() {
+        return batteryCapacity;
+    }
+
+    public String getOs() {
+        return os;
+    }
+
+    public String getMemoryRom() {
+        return memoryRom;
+    }
+
+    public String getSystemMemory() {
+        return systemMemory;
+    }
+
+    public String getCpu() {
+        return cpu;
+    }
+
+    public String getDisplayInches() {
+        return displayInches;
+    }
+
     public Laptop() {
     }
 

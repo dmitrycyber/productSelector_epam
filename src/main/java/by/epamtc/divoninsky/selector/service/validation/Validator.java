@@ -6,11 +6,7 @@ import by.epamtc.divoninsky.selector.entity.criteria.Criteria;
 public class Validator {
 	
 	public static boolean criteriaValidator(Criteria criteria) {
-		// you may add your own code here
-		
-		return true;
+		return criteria != null;
 	}
 
 }
-
-//you may add your own new classes
